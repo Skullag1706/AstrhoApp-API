@@ -1,0 +1,6 @@
+@AstrhoApp.API_HostAddress = http://localhost:5202
+
+GET {{AstrhoApp.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
