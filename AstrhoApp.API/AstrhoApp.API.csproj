@@ -7,6 +7,18 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Data\**" />
+	  <Compile Remove="wwwroot\**" />
+	  <Content Remove="Data\**" />
+	  <Content Remove="wwwroot\**" />
+	  <EmbeddedResource Remove="Data\**" />
+	  <EmbeddedResource Remove="wwwroot\**" />
+	  <None Remove="Data\**" />
+	  <None Remove="wwwroot\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
